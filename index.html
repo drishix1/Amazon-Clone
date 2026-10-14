@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#131921" name="theme-color"/>
+<meta content="An educational Amazon-inspired responsive website made using HTML and CSS only." name="description"/>
+<title>Amazon — Discover your next favorite</title>
+<link href="images/amazon_logo_trimmed.png" rel="icon" type="image/png"/>
+<link href="style.css" rel="stylesheet"/>
+
+</head>
+<body id="top">
+<a class="skip-link" href="#collections">Skip to collections</a>
+<header class="site-header">
+  <div class="header-main page-container">
+    <a aria-label="Amazon homepage" class="brand" href="#top">
+      <img alt="amazon" height="39" src="images/amazon_logo_trimmed.png" width="122"/>
+    </a>
+
+    <div class="delivery-label" aria-label="Deliver to India">
+      <svg aria-hidden="true" class="icon" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+      <span><small>Deliver to</small><strong>India</strong></span>
+    </div>
+
+    <!-- HTML/CSS-only navigation. Search-look control jumps to collections; it does not send visitors to Amazon. -->
+    <div class="search-bar" aria-label="Explore categories">
+      <span class="search-origin">All</span>
+      <span class="search-placeholder">Explore categories and products</span>
+      <a aria-label="Browse our collections" class="search-submit" href="#collections" title="Browse collections">
+        <svg aria-hidden="true" class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 5 5"></path></svg>
+      </a>
+    </div>
+
+    <div class="header-actions" aria-label="Store interface preview">
+      <span class="header-action language-action" aria-label="Language English"><strong>🇮🇳 EN</strong></span>
+      <span class="header-action account-action" title="Account interface preview">
+        <span class="action-copy"><small>Hello, sign in</small><strong>Account &amp; Lists</strong></span>
+      </span>
+      <span class="header-action orders-action" title="Orders interface preview">
+        <span class="action-copy"><small>Returns</small><strong>&amp; Orders</strong></span>
+      </span>
+      <span class="header-action cart-action" title="Cart interface preview">
+        <svg aria-hidden="true" class="icon" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"></circle><circle cx="19" cy="20" r="1"></circle><path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h10.5a2 2 0 0 0 2-1.6L22 7H5"></path></svg>
+        <strong>Cart</strong>
+      </span>
+    </div>
+  </div>
+  <nav aria-label="Main categories" class="secondary-nav">
+    <div class="page-container nav-inner">
+      <div class="nav-links nav-links-static" id="nav-links">
+        <a href="#collections">☰ &nbsp;All</a>
+        <a href="#collections">Shop all</a>
+        <a href="#mobiles">Electronics</a>
+        <a href="#fashion">Fashion</a>
+        <a href="#furniture">Home &amp; Living</a>
+        <a href="#beauty">Beauty</a>
+        <a href="#toys">Toys</a>
+        <a href="#pet-care">Pet Care</a>
+      </div>
+      <span class="nav-promo">A familiar look. A fresh experience. <span aria-hidden="true">✦</span></span>
+    </div>
+  </nav>
+</header>
+<main>
+<section aria-label="Featured shopping inspiration" class="hero">
+<img alt="Gift ideas for dads featuring headphones, a camera, a smartphone, a speaker, and sunglasses" class="hero-image" fetchpriority="high" src="images/hero_image.jpg"/>
+<div class="mobile-hero-copy">
+<span class="eyebrow light">A little something for everyone</span>
+<h1>Discover great finds every day.</h1>
+<a class="hero-link" href="#collections">Explore collections <span aria-hidden="true">→</span></a>
+</div>
+<div aria-hidden="true" class="hero-gradient"></div>
+</section>
+<section aria-label="Highlights" class="benefits page-container">
+<div class="benefit"><span aria-hidden="true" class="benefit-icon">✦</span><span><strong>Curated categories</strong><small>Find the things you love</small></span></div>
+<div class="benefit"><span aria-hidden="true" class="benefit-icon">⌕</span><span><strong>Explore 8 categories</strong><small>Browse the sections below</small></span></div>
+<div class="benefit"><span aria-hidden="true" class="benefit-icon">▣</span><span><strong>Mobile-friendly design</strong><small>Browse easily on any screen</small></span></div>
+</section>
+<section aria-labelledby="collections-heading" class="collections-section page-container" id="collections">
+<div class="section-heading">
+<div>
+<span class="eyebrow">SHOP YOUR WAY</span>
+<h2 id="collections-heading">Explore our collections<span class="title-dot">.</span></h2>
+<p>Everything from everyday essentials to the little things you love.</p>
+</div>
+<div class="result-count" id="results-count">8 collections</div>
+</div>
+<div aria-label="Jump to a collection" class="filters"><a class="filter-chip nav-chip" href="#collections">All collections</a><a class="filter-chip nav-chip" href="#fashion">Fashion</a><a class="filter-chip nav-chip" href="#mobiles">Tech</a><a class="filter-chip nav-chip" href="#beauty">Beauty</a><a class="filter-chip nav-chip" href="#furniture">Home</a><a class="filter-chip nav-chip" href="#pet-care">Pets</a><a class="filter-chip nav-chip" href="#toys">Toys</a></div>
+<div class="collection-grid" id="collection-grid">
+<article class="collection-card" id="clothing">
+<div class="card-top"><span class="category-label">STYLE ESSENTIALS</span></div>
+<a aria-label="Explore Clothing collection" class="card-image-link" href="#clothing"><img alt="Neatly organized clothes hanging on a rack" loading="lazy" src="images/box1_image.jpg"/></a>
+<div class="card-body"><h3>Clothing</h3><p>Find your new everyday favorites.</p><a aria-label="Explore Clothing on Amazon India" class="card-link" href="https://www.amazon.in/s?k=clothes" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="personal-care">
+<div class="card-top"><span class="category-label">DAILY ESSENTIALS</span></div>
+<a aria-label="Explore Health &amp; Personal Care collection" class="card-image-link" href="#personal-care"><img alt="Personal care essentials including toothbrush, razor and deodorant" loading="lazy" src="images/box2_image.jpg"/></a>
+<div class="card-body"><h3>Health &amp; Personal Care</h3><p>Little routines, made better.</p><a aria-label="Explore Health &amp; Personal Care on Amazon India" class="card-link" href="https://www.amazon.in/s?k=personal+care" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="furniture">
+<div class="card-top"><span class="category-label">HOME FAVORITES</span></div>
+<a aria-label="Explore Furniture collection" class="card-image-link" href="#furniture"><img alt="Elegant desk and upholstered chair in a contemporary interior" loading="lazy" src="images/box3_image.jpg"/></a>
+<div class="card-body"><h3>Furniture</h3><p>Refresh the spaces you call home.</p><a aria-label="Explore Furniture on Amazon India" class="card-link" href="https://www.amazon.in/s?k=furniture" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="mobiles">
+<div class="card-top"><span class="category-label">LATEST TECH</span></div>
+<a aria-label="Explore Mobiles collection" class="card-image-link" href="#mobiles"><img alt="Black smartphone with stylus" loading="lazy" src="images/box4_image.jpg"/></a>
+<div class="card-body"><h3>Mobiles &amp; Gadgets</h3><p>Great tech to stay connected.</p><a aria-label="Explore Mobiles &amp; Gadgets on Amazon India" class="card-link" href="https://www.amazon.in/s?k=mobile+phones" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="beauty">
+<div class="card-top"><span class="category-label">BEAUTY PICKS</span></div>
+<a aria-label="Explore Beauty Picks collection" class="card-image-link" href="#beauty"><img alt="Makeup brushes, lipstick, and cosmetics on a pastel backdrop" loading="lazy" src="images/box5_image.jpg"/></a>
+<div class="card-body"><h3>Beauty Picks</h3><p>Fresh looks and everyday glow.</p><a aria-label="Explore Beauty Picks on Amazon India" class="card-link" href="https://www.amazon.in/s?k=beauty+products" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="pet-care">
+<div class="card-top"><span class="category-label">FOR YOUR BEST FRIENDS</span></div>
+<a aria-label="Explore Pet Care collection" class="card-image-link" href="#pet-care"><img alt="Golden retriever relaxing with a gray and white cat" loading="lazy" src="images/box6_image.jpg"/></a>
+<div class="card-body"><h3>Pet Care</h3><p>For the companions who do it all.</p><a aria-label="Explore Pet Care on Amazon India" class="card-link" href="https://www.amazon.in/s?k=pet+care" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="toys">
+<div class="card-top"><span class="category-label">FUN FINDS</span></div>
+<a aria-label="Explore Toys &amp; Games collection" class="card-image-link" href="#toys"><img alt="Toy airplane, toy car and colored pencils on bright yellow background" loading="lazy" src="images/box7_image.jpg"/></a>
+<div class="card-body"><h3>Toys &amp; Games</h3><p>Bright ideas for playtime.</p><a aria-label="Explore Toys &amp; Games on Amazon India" class="card-link" href="https://www.amazon.in/s?k=toys+games" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+<article class="collection-card" id="fashion">
+<div class="card-top"><span class="category-label">TRENDING NOW</span></div>
+<a aria-label="Explore Fashion Trends collection" class="card-image-link" href="#fashion"><img alt="Fashion outfits, accessories and shoes in a style collage" loading="lazy" src="images/box8_image.jpg"/></a>
+<div class="card-body"><h3>Fashion Trends</h3><p>Looks worth making your own.</p><a aria-label="Explore Fashion Trends on Amazon India" class="card-link" href="https://www.amazon.in/s?k=fashion" rel="noopener noreferrer" target="_blank">Browse on Amazon.in ↗</a></div>
+</article>
+</div>
+
+</section>
+<section aria-label="Explore more" class="feature-banner page-container">
+<div class="feature-copy"><span class="eyebrow">DISCOVER YOUR STYLE</span><h2>Big inspiration.<br/>Simple browsing.</h2><p>A student-built storefront concept made with HTML and CSS. Explore the design here, then browse real products on Amazon India.</p><a class="banner-button" href="https://www.amazon.in/" rel="noopener noreferrer" target="_blank">Visit official Amazon.in ↗</a></div>
+<div aria-hidden="true" class="feature-visual"><div class="visual-circle one"></div><div class="visual-circle two"></div><span class="visual-symbol">✦</span><span class="visual-caption">Fresh finds, every day</span></div>
+</section>
+</main>
+<footer class="site-footer" id="about">
+<a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+<div class="footer-main page-container">
+<div class="footer-intro">
+<img alt="amazon" height="40" src="images/amazon_logo_trimmed.png" width="130"/>
+<p>A responsive Amazon-inspired student UI project, designed using only HTML and CSS.</p>
+<span class="footer-demo-tag">PORTFOLIO DEMO</span>
+</div>
+<div class="footer-column"><h3>Explore</h3><a href="#collections">All collections</a><a href="#fashion">Fashion</a><a href="#mobiles">Electronics</a><a href="#furniture">Home &amp; living</a></div>
+<div class="footer-column"><h3>Discover</h3><a href="#beauty">Beauty &amp; care</a><a href="#pet-care">Pet care</a><a href="#toys">Toys &amp; games</a><a href="#top">Back to homepage</a></div>
+<div class="footer-column"><h3>Shop on Amazon</h3><a href="https://www.amazon.in/" rel="noopener noreferrer" target="_blank">Official Amazon India ↗</a><a href="https://www.amazon.in/deals" rel="noopener noreferrer" target="_blank">Today’s Deals ↗</a><a href="https://www.amazon.in/gp/help/customer/display.html" rel="noopener noreferrer" target="_blank">Amazon Customer Service ↗</a></div>
+</div>
+<div class="footer-bottom" id="project-note">
+<div class="page-container footer-bottom-inner"><p>© 2026 Amazon-inspired front-end design</p><p>Made with HTML &amp; CSS • Made by Drishi Raj</p></div>
+</div>
+</footer>
+
+</body>
+</html>
